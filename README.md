@@ -1,2 +1,2 @@
 # JS30
-Completed code
+Practise JS through JS30 exercises
