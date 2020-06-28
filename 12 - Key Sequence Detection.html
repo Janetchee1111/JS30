@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Key Detection</title>
+  <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
+</head>
+<body>
+	TRY YOUR LUCK TO TYPE IN THE SECRET KEY!
+<script>
+const keyed = []
+const passingKeys = 'iknowthekey'
+
+window.addEventListener('keyup', (e) => {
+	keyed.push(e.key)
+	keyed.splice(-passingKeys.length -1, keyed.length - passingKeys.length)
+if (keyed.join('').includes(passingKeys)) {
+	alert('you got it!')}
+})
+</script>
+</body>
+</html>
